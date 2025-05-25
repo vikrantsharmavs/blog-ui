@@ -1,0 +1,72 @@
+@import "resp";
+
+@include media("<=phone") {
+  .m_sm {
+    margin: 20px 0;
+  }
+  .m_sm_b {
+    margin-bottom: 20px;
+  }
+  .m_sm_b1{
+      margin-top: 0px;
+  }
+  .p_r{
+    padding-right: 0px;
+  }
+  .m_t{
+    margin-top: 50px;
+  }
+  .m_sm_b{
+    margin-bottom: 60px;
+  }
+}
+@include media(">600px", "<=900px") {
+  .m_md {
+    margin: 20px 0;
+  }
+  .p_r{
+    padding-right: 150px;
+  }
+  .m_t{
+    margin-top: 60px;
+  }
+  .m_md_b{
+    margin-bottom: 60px;
+  }
+  .m_sm_b1{
+    margin-top: 0px;
+  }
+}
+
+@include media(">900px", "<=1200px") {
+  .m_lg {
+    margin-bottom: 80px;
+  }
+  .d_none{
+      display: none;
+  }
+  .m_t{
+    margin-top: 80px;
+  }
+  .p_r{
+    padding-right: 170px;
+  }
+  .m_sm_b1{
+    margin-top: 80px;
+  }
+}
+
+@include media(">1200px", "<=1800px") {
+  .m_xl {
+    margin-bottom: 80px;
+  }
+  .m_t{
+    margin-top: 80px;
+  }
+  .p_r{
+    padding-right: 250px;
+  }
+  .m_sm_b1{
+    margin-top: 80px;
+  }
+}

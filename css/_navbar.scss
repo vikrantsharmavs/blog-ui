@@ -1,0 +1,33 @@
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../image/menu.svg);
+  }
+  
+  .navbar-toggler {
+    border: none !important;
+    &:focus{
+      box-shadow: 0 0 0 0.0rem;
+    }
+  }
+  
+  .navbar-nav{
+    .nav-link{
+      padding: 0 30px !important;
+      font-family: lato-regular;
+      color: white !important;
+      &:hover{
+        color: $clr1 !important;
+      }
+      @media (max-width: 600px) {
+        padding: 10px 0 0 0 !important;
+        
+      }
+    }
+    
+  }
+  
+  .collapse{
+    @media (max-width: 600px) {
+      padding-bottom: 20px!important;
+      
+    }
+  }

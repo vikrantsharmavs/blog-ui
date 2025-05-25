@@ -1,0 +1,299 @@
+@import "font";
+@import "var";
+@import "mixin";
+@import "navbar";
+@import "mrg";
+@import "resp";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.fs_6 {
+  font-size: 17px;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.card-body {
+  background: #f8f8f8 !important;
+}
+
+.m_y {
+  margin: 35px 0 45px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h_:hover {
+  color: $clr2 !important;
+}
+
+.h_btn:hover {
+  background-color: $clr2;
+  color: white;
+}
+
+.clr1 {
+  color: $clr1;
+}
+.clr2 {
+  background-color: $clr2;
+}
+.clr3 {
+  background-color: $clr3;
+}
+.clr4 {
+  color: $clr2;
+}
+.clr5 {
+  color: $clr4;
+}
+.clr6 {
+  color: $clr5;
+}
+
+.font-family1 {
+  font-family: lato-italic;
+  letter-spacing: 2px;
+}
+
+.font-family2 {
+  font-family: lato-bold;
+  letter-spacing: 2px;
+}
+
+.font-family3 {
+  font-family: lato-regular;
+  letter-spacing: 2px;
+}
+
+.font-family4 {
+  font-family: lato-italic1;
+  letter-spacing: 2px;
+}
+
+.font-family5 {
+  font-family: lato-bold;
+  
+}
+
+.set_heading {
+  @include set_line_heading();
+}
+
+.set_para {
+  @include set_line_para();
+}
+
+.cxx1 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.cxx2 {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+}
+
+.cxx3 {
+  width: 70%;
+  height: 90vh;
+  background-image: url(../image/bg1.jpg);
+  background-size: cover;
+  @include media("<=phone") {
+    width: 100%;
+  }
+}
+
+.cxx4 {
+  transform: translate(-73%);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 0px 40px 0px 0px;
+  @include media("<=phone") {
+    transform: translate(0);
+    margin: 0 30px;
+    padding: 30px;
+  }
+}
+.cxx5 {
+  transform: translateY(-70%);
+  @include media("<=phone") {
+    transform: translate(0);
+    margin: 0 50px;
+  }
+}
+
+.cxx6 {
+  font-family: lato-italic1;
+  color: $clr1;
+  cursor: pointer;
+  @include set_line_heading();
+  &:hover {
+    color: $clr2;
+  }
+  @include media("<=phone") {
+    padding-top: 30px;
+  }
+}
+
+.cxx7 {
+  font-family: lato-regular;
+  @include set_line_para();
+}
+
+.cxx8 {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  background: rgba(49, 52, 60, 0.6);
+}
+
+.cxx9 {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.cxx10 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cxx11 {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cxx12 {
+  width: 100%;
+  height: 13vh;
+  object-fit: cover;
+  border-radius: 5px;
+  @include media("<=phone") {
+    width: 100%;
+    height: 20vh;
+  }
+  @include media(">600px", "<=900px") {
+    width: 100%;
+    height: 30vh;
+  }
+  @include media(">900px", "<=1200px") {
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+.cxx13 {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  @include media("<=phone") {
+    width: 100%;
+    height: 200px;
+  }
+  @include media(">600px", "<=900px") {
+    width: 100%;
+    height: 200px;
+  }
+  @include media(">900px", "<=1200px") {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.cxx14 {
+  @include media("<=phone") {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.cxx15 {
+  display: flex;
+  justify-content: flex-end;
+  @include media("<=phone") {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cxx16 {
+  @include media("<=phone") {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+.cxx17 {
+  display: flex;
+  justify-content: flex-end;
+  @include media("<=phone") {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cxx18{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.h:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0rem #fff, 0 0 0 0rem #fff !important;
+}
+
+.btn_outline {
+  border: solid $clr2 1px;
+  color: $clr2;
+  &:hover {
+    background-color: $clr2;
+    color: white;
+  }
+}
+
+.btn_outline_1 {
+  border: solid $clr4 1px;
+  color: $clr4;
+  &:hover {
+    border: none;
+    background-color: $clr2;
+    color: white;
+  }
+}
+
+.form-control {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0rem #fff, 0 0 0 0rem #fff !important;
+}
+
+.sticky-top{
+  top: 50px;
+}
+
+.btn{
+  outline: 0 !important;
+  box-shadow: 0 0 0 0rem #fff, 0 0 0 0rem #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #2d3748 !important;
+}
