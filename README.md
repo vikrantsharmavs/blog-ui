@@ -5,7 +5,7 @@ A clean and modern blog website built to share UI/UX design tips, front-end deve
 
 ## 🌐 Live Demo
 
-[View Live](https://your-live-demo-link.com)
+[View Live](https://blog-xi-beige-43.vercel.app/index.html)
 
 ---
 
@@ -55,7 +55,7 @@ ui-blog/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ui-blog.git
+git clone https://github.com/vikrantsharmavs/blog-ui.git
 
 # Navigate to the folder
 cd ui-blog
@@ -86,7 +86,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## 🙌 Acknowledgements
-
-- Inspired by [Dribbble](https://dribbble.com/), [Medium](https://medium.com/), and [dev.to](https://dev.to/)
-- Icons from [Font Awesome](https://fontawesome.com/)
-- Deployed via [Vercel](https://vercel.com/) / [Netlify](https://netlify.com/)
